@@ -30,8 +30,8 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AimaTeam.LightDnsServer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\AimaTeam.LightDnsServer.Core.1.0.2-alpha\lib\net45\AimaTeam.LightDnsServer.dll</HintPath>
+    <Reference Include="AimaTeam.LightDnsServer, Version=1.0.0.3, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AimaTeam.LightDnsServer.Core.1.0.3-alpha\lib\net45\AimaTeam.LightDnsServer.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ARSoft.Tools.Net, Version=2.2.5.0, Culture=neutral, PublicKeyToken=1940454cd762ec57, processorArchitecture=MSIL">
