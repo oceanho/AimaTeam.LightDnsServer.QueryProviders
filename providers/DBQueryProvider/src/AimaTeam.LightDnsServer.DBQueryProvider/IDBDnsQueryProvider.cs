@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AimaTeam.LightDnsServer.DBQueryProvider
+using AimaTeam.LightDnsServer.Core;
+namespace AimaTeam.LightDnsServer.DBQueryProvider.DBQueryProvider
 {
-    public interface IDBDnsQueryProvider
+    public interface IDBDnsQueryProvider: IDNSQueryProvider
     {
         string DbType
         {

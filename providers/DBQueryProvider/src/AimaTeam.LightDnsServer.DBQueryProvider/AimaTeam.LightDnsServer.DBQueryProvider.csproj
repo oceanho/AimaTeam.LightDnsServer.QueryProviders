@@ -30,8 +30,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dapper.1.50.2\lib\net451\Dapper.dll</HintPath>
+    <Reference Include="AimaTeam.LightDnsServer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AimaTeam.LightDnsServer.Core.1.0.2-alpha\lib\net45\AimaTeam.LightDnsServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ARSoft.Tools.Net, Version=2.2.5.0, Culture=neutral, PublicKeyToken=1940454cd762ec57, processorArchitecture=MSIL">
+      <HintPath>..\packages\ARSoft.Tools.Net.2.2.5\lib\net45\ARSoft.Tools.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.1\lib\BouncyCastle.Crypto.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Dapper, Version=1.50.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.1.50.0\lib\net451\Dapper.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System" />
@@ -43,9 +55,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\NsRecordTree.cs" />
+    <Compile Include="Extensions\NsRecordTreeExtension.cs" />
+    <Compile Include="Helpers\NsRecordTreeHerlper.cs" />
     <Compile Include="IDBDnsQueryProvider.cs" />
     <Compile Include="DnsQueryAbstractBaseProvider.cs" />
     <Compile Include="Helpers\DbConnectionHelper.cs" />
+    <Compile Include="Impl\DbDNSQueryProvider.cs" />
+    <Compile Include="Impl\MemDNSQueryProvider.cs" />
     <Compile Include="Impl\MySqlQueryProvider.cs" />
     <Compile Include="Impl\SqlServerQueryProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
